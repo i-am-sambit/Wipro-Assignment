@@ -14,6 +14,12 @@
 		36D1C05B24D2FDF300FAD5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D1C05A24D2FDF300FAD5D2 /* Assets.xcassets */; };
 		36D1C05E24D2FDF300FAD5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D1C05C24D2FDF300FAD5D2 /* LaunchScreen.storyboard */; };
 		36D1C06924D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C06824D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift */; };
+		36D1C07524D2FEA100FAD5D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07424D2FEA100FAD5D2 /* NetworkManager.swift */; };
+		36D1C07C24D300B100FAD5D2 /* NetworkRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07B24D300B100FAD5D2 /* NetworkRequestType.swift */; };
+		36D1C07E24D3265A00FAD5D2 /* FactsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07D24D3265A00FAD5D2 /* FactsResponseModel.swift */; };
+		36D1C08024D3268800FAD5D2 /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07F24D3268800FAD5D2 /* FactsViewModel.swift */; };
+		36D1C08224D32CE800FAD5D2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08124D32CE800FAD5D2 /* BaseViewController.swift */; };
+		36D1C08524D32F3300FAD5D2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08424D32F3300FAD5D2 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		36D1C06424D2FDF300FAD5D2 /* Wipro AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wipro AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D1C06824D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wipro_AssignmentTests.swift; sourceTree = "<group>"; };
 		36D1C06A24D2FDF300FAD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36D1C07424D2FEA100FAD5D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		36D1C07B24D300B100FAD5D2 /* NetworkRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestType.swift; sourceTree = "<group>"; };
+		36D1C07D24D3265A00FAD5D2 /* FactsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsResponseModel.swift; sourceTree = "<group>"; };
+		36D1C07F24D3268800FAD5D2 /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
+		36D1C08124D32CE800FAD5D2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		36D1C08424D32F3300FAD5D2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +91,13 @@
 		36D1C05024D2FDEB00FAD5D2 /* Wipro Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				36D1C07A24D3002D00FAD5D2 /* Utils */,
+				36D1C07924D3002200FAD5D2 /* Views */,
+				36D1C07824D3001C00FAD5D2 /* Controllers */,
+				36D1C07724D3001200FAD5D2 /* Model */,
+				36D1C07624D3000C00FAD5D2 /* ViewModel */,
 				36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */,
 				36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */,
-				36D1C05524D2FDEB00FAD5D2 /* ViewController.swift */,
 				36D1C05724D2FDEC00FAD5D2 /* Main.storyboard */,
 				36D1C05A24D2FDF300FAD5D2 /* Assets.xcassets */,
 				36D1C05C24D2FDF300FAD5D2 /* LaunchScreen.storyboard */,
@@ -97,6 +113,64 @@
 				36D1C06A24D2FDF300FAD5D2 /* Info.plist */,
 			);
 			path = "Wipro AssignmentTests";
+			sourceTree = "<group>";
+		};
+		36D1C07324D2FE1700FAD5D2 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				36D1C07424D2FEA100FAD5D2 /* NetworkManager.swift */,
+				36D1C07B24D300B100FAD5D2 /* NetworkRequestType.swift */,
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		36D1C07624D3000C00FAD5D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				36D1C07F24D3268800FAD5D2 /* FactsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		36D1C07724D3001200FAD5D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36D1C07D24D3265A00FAD5D2 /* FactsResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36D1C07824D3001C00FAD5D2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36D1C05524D2FDEB00FAD5D2 /* ViewController.swift */,
+				36D1C08124D32CE800FAD5D2 /* BaseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		36D1C07924D3002200FAD5D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36D1C07A24D3002D00FAD5D2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				36D1C08324D32F2600FAD5D2 /* Alert */,
+				36D1C07324D2FE1700FAD5D2 /* NetworkModel */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		36D1C08324D32F2600FAD5D2 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				36D1C08424D32F3300FAD5D2 /* Alert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +274,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D1C08524D32F3300FAD5D2 /* Alert.swift in Sources */,
 				36D1C05624D2FDEB00FAD5D2 /* ViewController.swift in Sources */,
 				36D1C05224D2FDEB00FAD5D2 /* AppDelegate.swift in Sources */,
+				36D1C08024D3268800FAD5D2 /* FactsViewModel.swift in Sources */,
+				36D1C07C24D300B100FAD5D2 /* NetworkRequestType.swift in Sources */,
 				36D1C05424D2FDEB00FAD5D2 /* SceneDelegate.swift in Sources */,
+				36D1C08224D32CE800FAD5D2 /* BaseViewController.swift in Sources */,
+				36D1C07E24D3265A00FAD5D2 /* FactsResponseModel.swift in Sources */,
+				36D1C07524D2FEA100FAD5D2 /* NetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
