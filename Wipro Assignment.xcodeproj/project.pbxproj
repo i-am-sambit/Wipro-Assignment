@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -213,7 +213,6 @@
 				1501164A90B95F3867283C32 /* Pods-Wipro AssignmentTests.debug.xcconfig */,
 				DE17A5530E50138C0003BFBC /* Pods-Wipro AssignmentTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

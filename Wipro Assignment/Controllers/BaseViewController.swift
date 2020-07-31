@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class BaseViewController: UITableViewController {
 
@@ -17,10 +18,23 @@ class BaseViewController: UITableViewController {
         }
     }
     
+    private var progressHud: JGProgressHUD?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    final func showLoader(with message: String) {
+        progressHud = JGProgressHUD(style: .dark)
+        progressHud?.textLabel.text = message
+        progressHud?.detailTextLabel.text = ""
+        progressHud?.show(in: self.view)
+    }
+    
+    final func dismissLoader() {
+        progressHud?.dismiss()
     }
     
     private func show(alert: Alert) {

@@ -15,16 +15,21 @@ class ViewController: BaseViewController {
         super.viewDidLoad()
         
         setupUI()
-        viewModel.fetch()
+        fetchData()
     }
     
-    func setupUI() {
+    private func setupUI() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
         self.tableView.dataSource = self
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 100
         self.tableView.register(FactTableViewCell.self, forCellReuseIdentifier: "facts")
+    }
+    
+    private func fetchData() {
+        self.showLoader(with: "Loading...")
+        viewModel.fetch()
     }
 
 
@@ -42,11 +47,13 @@ class ViewController: BaseViewController {
 
 extension ViewController: FactsDataSource {
     func didReceiveResponse() {
-        self.navigationItem.title = viewModel.fact?.title ?? "About USA"
+        self.dismissLoader()
+        self.navigationItem.title = viewModel.fact?.title
         tableView.reloadData()
     }
     
     func didReceiveError() {
+        self.dismissLoader()
         self.error = viewModel.error
     }
     
