@@ -1,5 +1,5 @@
 //
-//  NetworkRequestType.swift
+//  WAHTTPRequestMethod.swift
 //  Wipro Assignment
 //
 //  Created by SAMBIT DASH on 30/07/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum NetworkRequestType: String {
+enum WAHTTPRequestMethod: String {
     case get
     case post
     case put

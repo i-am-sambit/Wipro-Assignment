@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3640B53C24D3D26D000647CC /* NetworkRechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B53B24D3D26D000647CC /* NetworkRechability.swift */; };
+		3640B53C24D3D26D000647CC /* WANetworkRechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B53B24D3D26D000647CC /* WANetworkRechability.swift */; };
 		3640B53F24D3D4F6000647CC /* WAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B53E24D3D4F6000647CC /* WAError.swift */; };
+		3640B54124D3E540000647CC /* WAURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54024D3E540000647CC /* WAURLBuilder.swift */; };
+		3640B54424D3E68F000647CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54324D3E68F000647CC /* Constants.swift */; };
+		3640B54724D3E80F000647CC /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54624D3E80F000647CC /* UITableViewCell+Extension.swift */; };
 		3692FB5367395744E238C91A /* Pods_Wipro_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F07F4DE4A92E78680FD834F /* Pods_Wipro_Assignment.framework */; };
 		36D1C05224D2FDEB00FAD5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */; };
 		36D1C05424D2FDEB00FAD5D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */; };
-		36D1C05624D2FDEB00FAD5D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05524D2FDEB00FAD5D2 /* ViewController.swift */; };
+		36D1C05624D2FDEB00FAD5D2 /* WAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05524D2FDEB00FAD5D2 /* WAViewController.swift */; };
 		36D1C05924D2FDEC00FAD5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D1C05724D2FDEC00FAD5D2 /* Main.storyboard */; };
 		36D1C05B24D2FDF300FAD5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D1C05A24D2FDF300FAD5D2 /* Assets.xcassets */; };
 		36D1C05E24D2FDF300FAD5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D1C05C24D2FDF300FAD5D2 /* LaunchScreen.storyboard */; };
 		36D1C06924D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C06824D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift */; };
-		36D1C07524D2FEA100FAD5D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07424D2FEA100FAD5D2 /* NetworkManager.swift */; };
-		36D1C07C24D300B100FAD5D2 /* NetworkRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07B24D300B100FAD5D2 /* NetworkRequestType.swift */; };
-		36D1C07E24D3265A00FAD5D2 /* FactsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07D24D3265A00FAD5D2 /* FactsResponseModel.swift */; };
-		36D1C08024D3268800FAD5D2 /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07F24D3268800FAD5D2 /* FactsViewModel.swift */; };
-		36D1C08224D32CE800FAD5D2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08124D32CE800FAD5D2 /* BaseViewController.swift */; };
-		36D1C08524D32F3300FAD5D2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08424D32F3300FAD5D2 /* Alert.swift */; };
-		36D1C08824D339DD00FAD5D2 /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08724D339DD00FAD5D2 /* FactTableViewCell.swift */; };
+		36D1C07524D2FEA100FAD5D2 /* WANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07424D2FEA100FAD5D2 /* WANetworkManager.swift */; };
+		36D1C07C24D300B100FAD5D2 /* WAHTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07B24D300B100FAD5D2 /* WAHTTPRequestMethod.swift */; };
+		36D1C07E24D3265A00FAD5D2 /* WAFactsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07D24D3265A00FAD5D2 /* WAFactsResponseModel.swift */; };
+		36D1C08024D3268800FAD5D2 /* WAFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07F24D3268800FAD5D2 /* WAFactsViewModel.swift */; };
+		36D1C08224D32CE800FAD5D2 /* WABaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08124D32CE800FAD5D2 /* WABaseViewController.swift */; };
+		36D1C08524D32F3300FAD5D2 /* WAAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08424D32F3300FAD5D2 /* WAAlert.swift */; };
+		36D1C08824D339DD00FAD5D2 /* WAFactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08724D339DD00FAD5D2 /* WAFactTableViewCell.swift */; };
 		874D26DD2485A7014C68DC03 /* Pods_Wipro_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539B33807E1F89D4C764E6D0 /* Pods_Wipro_AssignmentTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,12 +43,15 @@
 /* Begin PBXFileReference section */
 		0C56A02ADB0DAA42F0A5287E /* Pods-Wipro Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro Assignment.release.xcconfig"; path = "Target Support Files/Pods-Wipro Assignment/Pods-Wipro Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		1501164A90B95F3867283C32 /* Pods-Wipro AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Wipro AssignmentTests/Pods-Wipro AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3640B53B24D3D26D000647CC /* NetworkRechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRechability.swift; sourceTree = "<group>"; };
+		3640B53B24D3D26D000647CC /* WANetworkRechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WANetworkRechability.swift; sourceTree = "<group>"; };
 		3640B53E24D3D4F6000647CC /* WAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAError.swift; sourceTree = "<group>"; };
+		3640B54024D3E540000647CC /* WAURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAURLBuilder.swift; sourceTree = "<group>"; };
+		3640B54324D3E68F000647CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3640B54624D3E80F000647CC /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		36D1C04E24D2FDEB00FAD5D2 /* Wipro Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wipro Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		36D1C05524D2FDEB00FAD5D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36D1C05524D2FDEB00FAD5D2 /* WAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAViewController.swift; sourceTree = "<group>"; };
 		36D1C05824D2FDEC00FAD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36D1C05A24D2FDF300FAD5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36D1C05D24D2FDF300FAD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,13 +59,13 @@
 		36D1C06424D2FDF300FAD5D2 /* Wipro AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wipro AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D1C06824D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wipro_AssignmentTests.swift; sourceTree = "<group>"; };
 		36D1C06A24D2FDF300FAD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36D1C07424D2FEA100FAD5D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		36D1C07B24D300B100FAD5D2 /* NetworkRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestType.swift; sourceTree = "<group>"; };
-		36D1C07D24D3265A00FAD5D2 /* FactsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsResponseModel.swift; sourceTree = "<group>"; };
-		36D1C07F24D3268800FAD5D2 /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
-		36D1C08124D32CE800FAD5D2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		36D1C08424D32F3300FAD5D2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		36D1C08724D339DD00FAD5D2 /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
+		36D1C07424D2FEA100FAD5D2 /* WANetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WANetworkManager.swift; sourceTree = "<group>"; };
+		36D1C07B24D300B100FAD5D2 /* WAHTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAHTTPRequestMethod.swift; sourceTree = "<group>"; };
+		36D1C07D24D3265A00FAD5D2 /* WAFactsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAFactsResponseModel.swift; sourceTree = "<group>"; };
+		36D1C07F24D3268800FAD5D2 /* WAFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAFactsViewModel.swift; sourceTree = "<group>"; };
+		36D1C08124D32CE800FAD5D2 /* WABaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseViewController.swift; sourceTree = "<group>"; };
+		36D1C08424D32F3300FAD5D2 /* WAAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAAlert.swift; sourceTree = "<group>"; };
+		36D1C08724D339DD00FAD5D2 /* WAFactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAFactTableViewCell.swift; sourceTree = "<group>"; };
 		539B33807E1F89D4C764E6D0 /* Pods_Wipro_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipro_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F07F4DE4A92E78680FD834F /* Pods_Wipro_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipro_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CE39E250A6A73562241AC4 /* Pods-Wipro Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Wipro Assignment/Pods-Wipro Assignment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +98,22 @@
 				3640B53E24D3D4F6000647CC /* WAError.swift */,
 			);
 			path = WAError;
+			sourceTree = "<group>";
+		};
+		3640B54224D3E685000647CC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3640B54324D3E68F000647CC /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3640B54524D3E7C8000647CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3640B54624D3E80F000647CC /* UITableViewCell+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		36D1C04524D2FDEB00FAD5D2 = {
@@ -144,9 +166,10 @@
 		36D1C07324D2FE1700FAD5D2 /* NetworkModel */ = {
 			isa = PBXGroup;
 			children = (
-				36D1C07424D2FEA100FAD5D2 /* NetworkManager.swift */,
-				36D1C07B24D300B100FAD5D2 /* NetworkRequestType.swift */,
-				3640B53B24D3D26D000647CC /* NetworkRechability.swift */,
+				36D1C07424D2FEA100FAD5D2 /* WANetworkManager.swift */,
+				36D1C07B24D300B100FAD5D2 /* WAHTTPRequestMethod.swift */,
+				3640B53B24D3D26D000647CC /* WANetworkRechability.swift */,
+				3640B54024D3E540000647CC /* WAURLBuilder.swift */,
 			);
 			path = NetworkModel;
 			sourceTree = "<group>";
@@ -154,7 +177,7 @@
 		36D1C07624D3000C00FAD5D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				36D1C07F24D3268800FAD5D2 /* FactsViewModel.swift */,
+				36D1C07F24D3268800FAD5D2 /* WAFactsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -162,7 +185,7 @@
 		36D1C07724D3001200FAD5D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				36D1C07D24D3265A00FAD5D2 /* FactsResponseModel.swift */,
+				36D1C07D24D3265A00FAD5D2 /* WAFactsResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,8 +193,8 @@
 		36D1C07824D3001C00FAD5D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				36D1C05524D2FDEB00FAD5D2 /* ViewController.swift */,
-				36D1C08124D32CE800FAD5D2 /* BaseViewController.swift */,
+				36D1C05524D2FDEB00FAD5D2 /* WAViewController.swift */,
+				36D1C08124D32CE800FAD5D2 /* WABaseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +210,8 @@
 		36D1C07A24D3002D00FAD5D2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3640B54524D3E7C8000647CC /* Extensions */,
+				3640B54224D3E685000647CC /* Constants */,
 				3640B53D24D3D4E3000647CC /* WAError */,
 				36D1C08324D32F2600FAD5D2 /* Alert */,
 				36D1C07324D2FE1700FAD5D2 /* NetworkModel */,
@@ -197,7 +222,7 @@
 		36D1C08324D32F2600FAD5D2 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				36D1C08424D32F3300FAD5D2 /* Alert.swift */,
+				36D1C08424D32F3300FAD5D2 /* WAAlert.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -205,7 +230,7 @@
 		36D1C08624D339BF00FAD5D2 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				36D1C08724D339DD00FAD5D2 /* FactTableViewCell.swift */,
+				36D1C08724D339DD00FAD5D2 /* WAFactTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -398,18 +423,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D1C08524D32F3300FAD5D2 /* Alert.swift in Sources */,
-				36D1C05624D2FDEB00FAD5D2 /* ViewController.swift in Sources */,
+				36D1C08524D32F3300FAD5D2 /* WAAlert.swift in Sources */,
+				3640B54724D3E80F000647CC /* UITableViewCell+Extension.swift in Sources */,
+				36D1C05624D2FDEB00FAD5D2 /* WAViewController.swift in Sources */,
 				3640B53F24D3D4F6000647CC /* WAError.swift in Sources */,
 				36D1C05224D2FDEB00FAD5D2 /* AppDelegate.swift in Sources */,
-				3640B53C24D3D26D000647CC /* NetworkRechability.swift in Sources */,
-				36D1C08024D3268800FAD5D2 /* FactsViewModel.swift in Sources */,
-				36D1C07C24D300B100FAD5D2 /* NetworkRequestType.swift in Sources */,
+				3640B53C24D3D26D000647CC /* WANetworkRechability.swift in Sources */,
+				3640B54124D3E540000647CC /* WAURLBuilder.swift in Sources */,
+				36D1C08024D3268800FAD5D2 /* WAFactsViewModel.swift in Sources */,
+				36D1C07C24D300B100FAD5D2 /* WAHTTPRequestMethod.swift in Sources */,
 				36D1C05424D2FDEB00FAD5D2 /* SceneDelegate.swift in Sources */,
-				36D1C08224D32CE800FAD5D2 /* BaseViewController.swift in Sources */,
-				36D1C08824D339DD00FAD5D2 /* FactTableViewCell.swift in Sources */,
-				36D1C07E24D3265A00FAD5D2 /* FactsResponseModel.swift in Sources */,
-				36D1C07524D2FEA100FAD5D2 /* NetworkManager.swift in Sources */,
+				3640B54424D3E68F000647CC /* Constants.swift in Sources */,
+				36D1C08224D32CE800FAD5D2 /* WABaseViewController.swift in Sources */,
+				36D1C08824D339DD00FAD5D2 /* WAFactTableViewCell.swift in Sources */,
+				36D1C07E24D3265A00FAD5D2 /* WAFactsResponseModel.swift in Sources */,
+				36D1C07524D2FEA100FAD5D2 /* WANetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  NetworkRechability.swift
+//  WANetworkRechability.swift
 //  Wipro Assignment
 //
 //  Created by SAMBIT DASH on 31/07/20.
@@ -9,8 +9,8 @@
 import Foundation
 import Network
 
-class NetworkRechability {
-    public static let shared = NetworkRechability()
+final class WANetworkRechability {
+    public static let shared = WANetworkRechability()
     
     private var monitor: NWPathMonitor?
     private var isMonitoring = false
@@ -33,7 +33,11 @@ class NetworkRechability {
         
     }
     
-    open func startMonitoring() {
+    
+    /// Start Monitoring
+    ///
+    /// Invoke this method, from Appdelegate
+    public func startMonitoring() {
         if !isMonitoring {
             monitor = NWPathMonitor()
             
@@ -47,7 +51,9 @@ class NetworkRechability {
         }
     }
     
-    open func stopMonitoring() {
+    /// Stop Monitoring
+    ///
+    public func stopMonitoring() {
         if isMonitoring, let monitor = monitor {
             monitor.cancel()
             self.monitor = nil

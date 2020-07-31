@@ -1,5 +1,5 @@
 //
-//  Alert.swift
+//  WAAlert.swift
 //  Wipro Assignment
 //
 //  Created by SAMBIT DASH on 30/07/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Alert {
+enum WAAlert {
     case success(message: String)
     case info(message: String)
     case error(message: String)

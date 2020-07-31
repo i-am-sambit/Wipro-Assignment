@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
         
-        let navigationController = UINavigationController(rootViewController: ViewController())
+        let navigationController = UINavigationController(rootViewController: WAViewController())
         self.window?.rootViewController = navigationController
         
-        NetworkRechability.shared.startMonitoring()
+        WANetworkRechability.shared.startMonitoring()
         return true
     }
 

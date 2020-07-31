@@ -1,5 +1,5 @@
 //
-//  FactTableViewCell.swift
+//  WAFactTableViewCell.swift
 //  Wipro Assignment
 //
 //  Created by SAMBIT DASH on 30/07/20.
@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class FactTableViewCell: UITableViewCell {
+class WAFactTableViewCell: UITableViewCell {
     var factTitleLabel: UILabel!
     var factDetailLabel: UILabel!
     var factImageView: UIImageView!
@@ -18,6 +18,7 @@ class FactTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
         
+        // Set FactImageView
         factImageView = UIImageView()
         factImageView.layer.cornerRadius = 10
         factImageView.clipsToBounds = true
@@ -30,6 +31,7 @@ class FactTableViewCell: UITableViewCell {
         factImageView.widthAnchor.constraint(equalToConstant: 130).isActive = true
         factImageView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
+        // Set Fact Title Label
         factTitleLabel = UILabel()
         if #available(iOS 13.0, *) {
             factTitleLabel.textColor = .label
@@ -46,6 +48,7 @@ class FactTableViewCell: UITableViewCell {
         factTitleLabel.topAnchor.constraint(equalTo: factImageView.topAnchor).isActive = true
         self.contentView.trailingAnchor.constraint(equalTo: factTitleLabel.trailingAnchor, constant: 15).isActive = true
         
+        // Set Fact Detail Label
         factDetailLabel = UILabel()
         if #available(iOS 13.0, *) {
             factDetailLabel.textColor = .secondaryLabel
@@ -65,7 +68,9 @@ class FactTableViewCell: UITableViewCell {
         factDetailLabel.setContentHuggingPriority(UILayoutPriority(250), for: .horizontal)
     }
     
-    func set(fact: FactModel) {
+    /// Set Fact
+    /// - Parameter fact: instance of WAFactModel
+    func set(fact: WAFactModel) {
         factTitleLabel.text = fact.title
         factDetailLabel.text = fact.detail
         

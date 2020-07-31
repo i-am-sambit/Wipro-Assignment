@@ -1,5 +1,5 @@
 //
-//  BaseViewController.swift
+//  WABaseViewController.swift
 //  Wipro Assignment
 //
 //  Created by SAMBIT DASH on 30/07/20.
@@ -9,7 +9,7 @@
 import UIKit
 import JGProgressHUD
 
-class BaseViewController: UITableViewController {
+class WABaseViewController: UITableViewController {
 
     var error: WAError? {
         didSet {
@@ -37,20 +37,25 @@ class BaseViewController: UITableViewController {
         progressHud?.dismiss()
     }
     
-    private func show(alert: Alert) {
+    
+    /// Show Alert
+    ///
+    /// Invoke this method, when you want to show an alert
+    /// - Parameter alert: an WAAlert instance, with message
+    final func show(alert: WAAlert) {
         var alertTitle: String
         var alertMessage: String
         
         switch alert {
             
         case .success(message: let message):
-            alertTitle = "Success"
+            alertTitle = AlertConstant.success
             alertMessage = message
         case .info(message: let message):
-            alertTitle = "Alert"
+            alertTitle = AlertConstant.info
             alertMessage = message
         case .error(message: let message):
-            alertTitle = "Error"
+            alertTitle = AlertConstant.error
             alertMessage = message
         }
         

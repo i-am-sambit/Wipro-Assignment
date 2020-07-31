@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct FactsResponseModel: Decodable {
+struct WAFactsResponseModel: Decodable {
     let title: String
-    let facts: [FactModel]
+    let facts: [WAFactModel]
     
     enum CodingKeys: String, CodingKey {
         case title, facts = "rows"
@@ -19,11 +19,11 @@ struct FactsResponseModel: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
-        facts = try container.decodeIfPresent([FactModel].self, forKey: .facts) ?? [FactModel]()
+        facts = try container.decodeIfPresent([WAFactModel].self, forKey: .facts) ?? [WAFactModel]()
     }
 }
 
-struct FactModel: Decodable {
+struct WAFactModel: Decodable {
     let title: String
     let detail: String
     let image: String
