@@ -37,6 +37,9 @@ final class WAURLBuilder {
     /// - Throws: error, if unable to build url
     /// - Returns: returns URL
     public func build() throws -> URL {
+        guard self.components?.path.isEmpty == false else {
+            throw WAError.validation(message: "Unable to fetch data. URL is broken")
+        }
         guard let url = self.components?.url else {
             throw WAError.validation(message: "Unable to fetch data. URL is broken")
         }

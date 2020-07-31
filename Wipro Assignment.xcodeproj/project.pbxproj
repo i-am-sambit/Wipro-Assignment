@@ -12,6 +12,8 @@
 		3640B54124D3E540000647CC /* WAURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54024D3E540000647CC /* WAURLBuilder.swift */; };
 		3640B54424D3E68F000647CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54324D3E68F000647CC /* Constants.swift */; };
 		3640B54724D3E80F000647CC /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54624D3E80F000647CC /* UITableViewCell+Extension.swift */; };
+		3640B54924D3EF19000647CC /* WAFactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54824D3EF19000647CC /* WAFactsViewModelTests.swift */; };
+		3640B54B24D3F229000647CC /* WANetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54A24D3F229000647CC /* WANetworkManagerTests.swift */; };
 		3692FB5367395744E238C91A /* Pods_Wipro_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F07F4DE4A92E78680FD834F /* Pods_Wipro_Assignment.framework */; };
 		36D1C05224D2FDEB00FAD5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */; };
 		36D1C05424D2FDEB00FAD5D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */; };
@@ -48,6 +50,8 @@
 		3640B54024D3E540000647CC /* WAURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAURLBuilder.swift; sourceTree = "<group>"; };
 		3640B54324D3E68F000647CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3640B54624D3E80F000647CC /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		3640B54824D3EF19000647CC /* WAFactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAFactsViewModelTests.swift; sourceTree = "<group>"; };
+		3640B54A24D3F229000647CC /* WANetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WANetworkManagerTests.swift; sourceTree = "<group>"; };
 		36D1C04E24D2FDEB00FAD5D2 /* Wipro Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wipro Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 			children = (
 				36D1C06824D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift */,
 				36D1C06A24D2FDF300FAD5D2 /* Info.plist */,
+				3640B54824D3EF19000647CC /* WAFactsViewModelTests.swift */,
+				3640B54A24D3F229000647CC /* WANetworkManagerTests.swift */,
 			);
 			path = "Wipro AssignmentTests";
 			sourceTree = "<group>";
@@ -445,6 +451,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3640B54924D3EF19000647CC /* WAFactsViewModelTests.swift in Sources */,
+				3640B54B24D3F229000647CC /* WANetworkManagerTests.swift in Sources */,
 				36D1C06924D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
