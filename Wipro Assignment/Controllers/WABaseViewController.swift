@@ -23,7 +23,12 @@ class WABaseViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    func setupUI() {
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.attributedTitle = NSAttributedString(string: "Refreshing...")
     }
     
     final func showLoader(with message: String) {
@@ -35,6 +40,7 @@ class WABaseViewController: UITableViewController {
     
     final func dismissLoader() {
         progressHud?.dismiss()
+        self.refreshControl?.endRefreshing()
     }
     
     

@@ -13,23 +13,31 @@ class WAViewController: WABaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
         fetchData()
     }
     
-    private func setupUI() {
+    internal override func setupUI() {
+        super.setupUI()
+        
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
         self.tableView.dataSource = self
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 100
         self.tableView.register(WAFactTableViewCell.self, forCellReuseIdentifier: WAFactTableViewCell.identifier)
+        
+        self.refreshControl?.addTarget(self, action: #selector(refreshControllAction(_:)), for: .valueChanged)
     }
     
     private func fetchData() {
         self.showLoader(with: "Loading...")
         viewModel.fetch()
+    }
+    
+    @objc func refreshControllAction(_ controll: UIRefreshControl) {
+        viewModel.fetch()
+        refreshControl?.beginRefreshing()
     }
 
 
