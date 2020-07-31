@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navigationController = UINavigationController(rootViewController: ViewController())
         self.window?.rootViewController = navigationController
+        
+        NetworkRechability.shared.startMonitoring()
         return true
     }
 

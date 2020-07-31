@@ -11,10 +11,10 @@ import JGProgressHUD
 
 class BaseViewController: UITableViewController {
 
-    var error: Error? {
+    var error: WAError? {
         didSet {
             guard let unwrappedError = error else { return }
-            self.show(alert: .error(message: unwrappedError.localizedDescription))
+            self.show(alert: .error(message: unwrappedError.message))
         }
     }
     

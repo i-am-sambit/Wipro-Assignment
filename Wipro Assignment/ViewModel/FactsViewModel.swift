@@ -19,7 +19,7 @@ class FactsViewModel {
             delegate?.didReceiveResponse()
         }
     }
-    private(set) var error: Error? {
+    private(set) var error: WAError? {
         didSet {
             delegate?.didReceiveError()
         }
@@ -33,7 +33,7 @@ class FactsViewModel {
     
     func fetch() {
         guard let url = URL(string: "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json") else { return }
-        NetworkManager<FactsResponseModel>(url: url, type: .get).request { (result) in
+        NetworkManager<FactsResponseModel>(url: url, type: .get).makeRequest { (result) in
             DispatchQueue.main.async {
                 switch result {
                     

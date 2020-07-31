@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3640B53C24D3D26D000647CC /* NetworkRechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B53B24D3D26D000647CC /* NetworkRechability.swift */; };
+		3640B53F24D3D4F6000647CC /* WAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B53E24D3D4F6000647CC /* WAError.swift */; };
 		3692FB5367395744E238C91A /* Pods_Wipro_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F07F4DE4A92E78680FD834F /* Pods_Wipro_Assignment.framework */; };
 		36D1C05224D2FDEB00FAD5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */; };
 		36D1C05424D2FDEB00FAD5D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		0C56A02ADB0DAA42F0A5287E /* Pods-Wipro Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro Assignment.release.xcconfig"; path = "Target Support Files/Pods-Wipro Assignment/Pods-Wipro Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		1501164A90B95F3867283C32 /* Pods-Wipro AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Wipro AssignmentTests/Pods-Wipro AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3640B53B24D3D26D000647CC /* NetworkRechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRechability.swift; sourceTree = "<group>"; };
+		3640B53E24D3D4F6000647CC /* WAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAError.swift; sourceTree = "<group>"; };
 		36D1C04E24D2FDEB00FAD5D2 /* Wipro Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wipro Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3640B53D24D3D4E3000647CC /* WAError */ = {
+			isa = PBXGroup;
+			children = (
+				3640B53E24D3D4F6000647CC /* WAError.swift */,
+			);
+			path = WAError;
+			sourceTree = "<group>";
+		};
 		36D1C04524D2FDEB00FAD5D2 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +146,7 @@
 			children = (
 				36D1C07424D2FEA100FAD5D2 /* NetworkManager.swift */,
 				36D1C07B24D300B100FAD5D2 /* NetworkRequestType.swift */,
+				3640B53B24D3D26D000647CC /* NetworkRechability.swift */,
 			);
 			path = NetworkModel;
 			sourceTree = "<group>";
@@ -174,6 +187,7 @@
 		36D1C07A24D3002D00FAD5D2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3640B53D24D3D4E3000647CC /* WAError */,
 				36D1C08324D32F2600FAD5D2 /* Alert */,
 				36D1C07324D2FE1700FAD5D2 /* NetworkModel */,
 			);
@@ -386,7 +400,9 @@
 			files = (
 				36D1C08524D32F3300FAD5D2 /* Alert.swift in Sources */,
 				36D1C05624D2FDEB00FAD5D2 /* ViewController.swift in Sources */,
+				3640B53F24D3D4F6000647CC /* WAError.swift in Sources */,
 				36D1C05224D2FDEB00FAD5D2 /* AppDelegate.swift in Sources */,
+				3640B53C24D3D26D000647CC /* NetworkRechability.swift in Sources */,
 				36D1C08024D3268800FAD5D2 /* FactsViewModel.swift in Sources */,
 				36D1C07C24D300B100FAD5D2 /* NetworkRequestType.swift in Sources */,
 				36D1C05424D2FDEB00FAD5D2 /* SceneDelegate.swift in Sources */,

@@ -34,8 +34,6 @@ class NetworkManager<Response: Decodable>: NSObject {
     private func getURLRequest() throws -> URLRequest {
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = self.requestType.value
-        urlRequest.addValue("text/html", forHTTPHeaderField: "Content-Type")
-        urlRequest.addValue("text/html", forHTTPHeaderField: "Accept")
         
         if let request = request {
             urlRequest.httpBody = try request.convertToData()
@@ -49,14 +47,18 @@ class NetworkManager<Response: Decodable>: NSObject {
     ///
     /// - Parameters:
     ///   - onResult: onResult callback
-    public func request(completionHandler: @escaping((Result<Response, Error>) -> Void)) {
+    public func makeRequest(completionHandler: @escaping ((Result<Response, WAError>) -> Void)) {
         
         do {
+            guard NetworkRechability.shared.isConnected else {
+                completionHandler(.failure(.operation(message: "Your device is not connected with internet")))
+                return
+            }
             
             let session = URLSession(configuration: sessionConfig)
             session.dataTask(with: try getURLRequest()) { (data, urlResponse, error) in
                 if let error = error {
-                    completionHandler(.failure(error))
+                    completionHandler(.failure(.api(message: error.localizedDescription)))
                     
                 } else {
                     let httpUrlResponse: HTTPURLResponse = urlResponse as! HTTPURLResponse
@@ -75,7 +77,7 @@ class NetworkManager<Response: Decodable>: NSObject {
                             completionHandler(.success(response))
                             
                         } catch let error {
-                            completionHandler(.failure(error))
+                            completionHandler(.failure(.api(message: error.localizedDescription)))
                         }
                         
                     } else {
@@ -86,7 +88,7 @@ class NetworkManager<Response: Decodable>: NSObject {
             session.finishTasksAndInvalidate()
             
         } catch let error {
-            completionHandler(.failure(error))
+            completionHandler(.failure(.operation(message: error.localizedDescription)))
             
         }
         
