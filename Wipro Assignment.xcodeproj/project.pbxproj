@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3692FB5367395744E238C91A /* Pods_Wipro_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F07F4DE4A92E78680FD834F /* Pods_Wipro_Assignment.framework */; };
 		36D1C05224D2FDEB00FAD5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */; };
 		36D1C05424D2FDEB00FAD5D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */; };
 		36D1C05624D2FDEB00FAD5D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05524D2FDEB00FAD5D2 /* ViewController.swift */; };
@@ -21,7 +22,7 @@
 		36D1C08224D32CE800FAD5D2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08124D32CE800FAD5D2 /* BaseViewController.swift */; };
 		36D1C08524D32F3300FAD5D2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08424D32F3300FAD5D2 /* Alert.swift */; };
 		36D1C08824D339DD00FAD5D2 /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C08724D339DD00FAD5D2 /* FactTableViewCell.swift */; };
-		36D1C08B24D351C900FAD5D2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 36D1C08A24D351C900FAD5D2 /* SDWebImage */; };
+		874D26DD2485A7014C68DC03 /* Pods_Wipro_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539B33807E1F89D4C764E6D0 /* Pods_Wipro_AssignmentTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C56A02ADB0DAA42F0A5287E /* Pods-Wipro Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro Assignment.release.xcconfig"; path = "Target Support Files/Pods-Wipro Assignment/Pods-Wipro Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		1501164A90B95F3867283C32 /* Pods-Wipro AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Wipro AssignmentTests/Pods-Wipro AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		36D1C04E24D2FDEB00FAD5D2 /* Wipro Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wipro Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +56,10 @@
 		36D1C08124D32CE800FAD5D2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		36D1C08424D32F3300FAD5D2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		36D1C08724D339DD00FAD5D2 /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
+		539B33807E1F89D4C764E6D0 /* Pods_Wipro_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipro_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F07F4DE4A92E78680FD834F /* Pods_Wipro_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipro_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CE39E250A6A73562241AC4 /* Pods-Wipro Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Wipro Assignment/Pods-Wipro Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		DE17A5530E50138C0003BFBC /* Pods-Wipro AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Wipro AssignmentTests/Pods-Wipro AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D1C08B24D351C900FAD5D2 /* SDWebImage in Frameworks */,
+				3692FB5367395744E238C91A /* Pods_Wipro_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874D26DD2485A7014C68DC03 /* Pods_Wipro_AssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +88,8 @@
 				36D1C05024D2FDEB00FAD5D2 /* Wipro Assignment */,
 				36D1C06724D2FDF300FAD5D2 /* Wipro AssignmentTests */,
 				36D1C04F24D2FDEB00FAD5D2 /* Products */,
+				ECAA0217F8CCDD3785BBE7CB /* Pods */,
+				5272F3A445294F56C5BBDE38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +196,27 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		5272F3A445294F56C5BBDE38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F07F4DE4A92E78680FD834F /* Pods_Wipro_Assignment.framework */,
+				539B33807E1F89D4C764E6D0 /* Pods_Wipro_AssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECAA0217F8CCDD3785BBE7CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4CE39E250A6A73562241AC4 /* Pods-Wipro Assignment.debug.xcconfig */,
+				0C56A02ADB0DAA42F0A5287E /* Pods-Wipro Assignment.release.xcconfig */,
+				1501164A90B95F3867283C32 /* Pods-Wipro AssignmentTests.debug.xcconfig */,
+				DE17A5530E50138C0003BFBC /* Pods-Wipro AssignmentTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,18 +224,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36D1C06D24D2FDF300FAD5D2 /* Build configuration list for PBXNativeTarget "Wipro Assignment" */;
 			buildPhases = (
+				1C7922743604043D3B726BBF /* [CP] Check Pods Manifest.lock */,
 				36D1C04A24D2FDEB00FAD5D2 /* Sources */,
 				36D1C04B24D2FDEB00FAD5D2 /* Frameworks */,
 				36D1C04C24D2FDEB00FAD5D2 /* Resources */,
+				4CAB896A630C7C5790086AC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Wipro Assignment";
-			packageProductDependencies = (
-				36D1C08A24D351C900FAD5D2 /* SDWebImage */,
-			);
 			productName = "Wipro Assignment";
 			productReference = 36D1C04E24D2FDEB00FAD5D2 /* Wipro Assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36D1C07024D2FDF300FAD5D2 /* Build configuration list for PBXNativeTarget "Wipro AssignmentTests" */;
 			buildPhases = (
+				38E543156B39138EC98AF009 /* [CP] Check Pods Manifest.lock */,
 				36D1C06024D2FDF300FAD5D2 /* Sources */,
 				36D1C06124D2FDF300FAD5D2 /* Frameworks */,
 				36D1C06224D2FDF300FAD5D2 /* Resources */,
@@ -255,9 +286,6 @@
 				Base,
 			);
 			mainGroup = 36D1C04524D2FDEB00FAD5D2;
-			packageReferences = (
-				36D1C08924D351C900FAD5D2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
-			);
 			productRefGroup = 36D1C04F24D2FDEB00FAD5D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,6 +315,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C7922743604043D3B726BBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wipro Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38E543156B39138EC98AF009 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wipro AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CAB896A630C7C5790086AC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wipro Assignment/Pods-Wipro Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wipro Assignment/Pods-Wipro Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wipro Assignment/Pods-Wipro Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36D1C04A24D2FDEB00FAD5D2 /* Sources */ = {
@@ -460,6 +552,7 @@
 		};
 		36D1C06E24D2FDF300FAD5D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4CE39E250A6A73562241AC4 /* Pods-Wipro Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -479,6 +572,7 @@
 		};
 		36D1C06F24D2FDF300FAD5D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C56A02ADB0DAA42F0A5287E /* Pods-Wipro Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -498,6 +592,7 @@
 		};
 		36D1C07124D2FDF300FAD5D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1501164A90B95F3867283C32 /* Pods-Wipro AssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +615,7 @@
 		};
 		36D1C07224D2FDF300FAD5D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE17A5530E50138C0003BFBC /* Pods-Wipro AssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -571,25 +667,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		36D1C08924D351C900FAD5D2 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.8.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		36D1C08A24D351C900FAD5D2 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 36D1C08924D351C900FAD5D2 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36D1C04624D2FDEB00FAD5D2 /* Project object */;
 }
