@@ -25,17 +25,17 @@ struct FactsResponseModel: Decodable {
 
 struct FactModel: Decodable {
     let title: String
-    let description: String
+    let detail: String
     let image: String
     
     enum CodingKeys: String, CodingKey {
-        case title, description, image = "imageHref"
+        case title, detail = "description", image = "imageHref"
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
-        description = try container.decodeIfPresent(String.self, forKey: .description) ?? ""
+        detail = try container.decodeIfPresent(String.self, forKey: .detail) ?? ""
         image = try container.decodeIfPresent(String.self, forKey: .image) ?? ""
     }
 }

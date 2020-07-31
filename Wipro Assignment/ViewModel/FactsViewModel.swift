@@ -34,12 +34,14 @@ class FactsViewModel {
     func fetch() {
         guard let url = URL(string: "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json") else { return }
         NetworkManager<FactsResponseModel>(url: url, type: .get).request { (result) in
-            switch result {
-                
-            case .success(let response):
-                self.fact = response
-            case .failure(let error):
-                self.error = error
+            DispatchQueue.main.async {
+                switch result {
+                    
+                case .success(let response):
+                    self.fact = response
+                case .failure(let error):
+                    self.error = error
+                }
             }
         }
     }

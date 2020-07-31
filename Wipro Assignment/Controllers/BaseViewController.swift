@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UITableViewController {
 
     var error: Error? {
         didSet {
