@@ -10,6 +10,18 @@ import UIKit
 import SDWebImage
 
 class WAFactTableViewCell: UITableViewCell {
+    private static let padding: CGFloat = 15.0
+    private static let paddingBetweenTitleAndDescription: CGFloat = 5.0
+    
+    private static let imageWidth: CGFloat = 130
+    private static let imageHeight: CGFloat = 100
+    private static let huggingPriority: Float = 250
+    
+    private static let titleFont: UIFont = .systemFont(ofSize: 18)
+    private static let descriptionFont: UIFont = .systemFont(ofSize: 15)
+    
+    
+    
     var factTitleLabel: UILabel!
     var factDetailLabel: UILabel!
     var factImageView: UIImageView!
@@ -25,11 +37,11 @@ class WAFactTableViewCell: UITableViewCell {
         self.contentView.addSubview(factImageView)
         
         factImageView.translatesAutoresizingMaskIntoConstraints = false
-        factImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 15).isActive = true
-        factImageView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 15).isActive = true
-        self.contentView.bottomAnchor.constraint(greaterThanOrEqualTo: factImageView.bottomAnchor, constant: 15).isActive = true
-        factImageView.widthAnchor.constraint(equalToConstant: 130).isActive = true
-        factImageView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        factImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: WAFactTableViewCell.padding).isActive = true
+        factImageView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: WAFactTableViewCell.padding).isActive = true
+        self.contentView.bottomAnchor.constraint(greaterThanOrEqualTo: factImageView.bottomAnchor, constant: WAFactTableViewCell.padding).isActive = true
+        factImageView.widthAnchor.constraint(equalToConstant: WAFactTableViewCell.imageWidth).isActive = true
+        factImageView.heightAnchor.constraint(equalToConstant: WAFactTableViewCell.imageHeight).isActive = true
         
         // Set Fact Title Label
         factTitleLabel = UILabel()
@@ -38,15 +50,15 @@ class WAFactTableViewCell: UITableViewCell {
         } else {
             factTitleLabel.textColor = .black
         }
-        factTitleLabel.font = .systemFont(ofSize: 18)
+        factTitleLabel.font = WAFactTableViewCell.titleFont
         factTitleLabel.numberOfLines = 0
         factTitleLabel.lineBreakMode = .byWordWrapping
         self.contentView.addSubview(factTitleLabel)
         
         factTitleLabel.translatesAutoresizingMaskIntoConstraints = false
-        factTitleLabel.leadingAnchor.constraint(equalTo: factImageView.trailingAnchor, constant: 15).isActive = true
+        factTitleLabel.leadingAnchor.constraint(equalTo: factImageView.trailingAnchor, constant: WAFactTableViewCell.padding).isActive = true
         factTitleLabel.topAnchor.constraint(equalTo: factImageView.topAnchor).isActive = true
-        self.contentView.trailingAnchor.constraint(equalTo: factTitleLabel.trailingAnchor, constant: 15).isActive = true
+        self.contentView.trailingAnchor.constraint(equalTo: factTitleLabel.trailingAnchor, constant: WAFactTableViewCell.padding).isActive = true
         
         // Set Fact Detail Label
         factDetailLabel = UILabel()
@@ -57,15 +69,15 @@ class WAFactTableViewCell: UITableViewCell {
         }
         factDetailLabel.numberOfLines = 0
         factDetailLabel.lineBreakMode = .byWordWrapping
-        factDetailLabel.font = .systemFont(ofSize: 15)
+        factDetailLabel.font = WAFactTableViewCell.descriptionFont
         self.contentView.addSubview(factDetailLabel)
         
         factDetailLabel.translatesAutoresizingMaskIntoConstraints = false
         factDetailLabel.leadingAnchor.constraint(equalTo: factTitleLabel.leadingAnchor).isActive = true
-        factDetailLabel.topAnchor.constraint(equalTo: factTitleLabel.bottomAnchor, constant: 5).isActive = true
-        factDetailLabel.trailingAnchor.constraint(equalTo: factTitleLabel.trailingAnchor, constant: 15).isActive = true
-        self.contentView.bottomAnchor.constraint(equalTo: factDetailLabel.bottomAnchor, constant: 15).isActive = true
-        factDetailLabel.setContentHuggingPriority(UILayoutPriority(250), for: .horizontal)
+        factDetailLabel.topAnchor.constraint(equalTo: factTitleLabel.bottomAnchor, constant: WAFactTableViewCell.paddingBetweenTitleAndDescription).isActive = true
+        factDetailLabel.trailingAnchor.constraint(equalTo: factTitleLabel.trailingAnchor, constant: WAFactTableViewCell.padding).isActive = true
+        self.contentView.bottomAnchor.constraint(equalTo: factDetailLabel.bottomAnchor, constant: WAFactTableViewCell.padding).isActive = true
+        factDetailLabel.setContentHuggingPriority(UILayoutPriority(WAFactTableViewCell.huggingPriority), for: .horizontal)
     }
     
     /// Set Fact
