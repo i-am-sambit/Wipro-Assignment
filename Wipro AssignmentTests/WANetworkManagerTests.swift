@@ -19,7 +19,7 @@ class WANetworkManagerTests: XCTestCase {
         self.networkExpectation = self.expectation(description: "serviceRequestException")
         
         do {
-            let url = try WAURLBuilder(NetworkConstant.baseURL).build()
+            let url = try WAURLBuilder(WANetworkConstantTest.baseURL).build()
             let networkManager = WANetworkManager<WAFactsResponseModel>(url: url, httpMethod: .get)
             networkManager.makeServiceRequest { (result) in
                 switch result {
@@ -81,7 +81,7 @@ class WANetworkManagerTests: XCTestCase {
                     break
                 case .failure(let error):
                     print(error.localizedDescription)
-                    self.noURLNetworkExpectation?.fulfill()
+                    self.randomURLNetworkExpectation?.fulfill()
                 }
             }
             

@@ -10,18 +10,18 @@
 		3640B53C24D3D26D000647CC /* WANetworkRechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B53B24D3D26D000647CC /* WANetworkRechability.swift */; };
 		3640B53F24D3D4F6000647CC /* WAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B53E24D3D4F6000647CC /* WAError.swift */; };
 		3640B54124D3E540000647CC /* WAURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54024D3E540000647CC /* WAURLBuilder.swift */; };
-		3640B54424D3E68F000647CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54324D3E68F000647CC /* Constants.swift */; };
+		3640B54424D3E68F000647CC /* WAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54324D3E68F000647CC /* WAConstants.swift */; };
 		3640B54724D3E80F000647CC /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54624D3E80F000647CC /* UITableViewCell+Extension.swift */; };
 		3640B54924D3EF19000647CC /* WAFactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54824D3EF19000647CC /* WAFactsViewModelTests.swift */; };
 		3640B54B24D3F229000647CC /* WANetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640B54A24D3F229000647CC /* WANetworkManagerTests.swift */; };
 		3692FB5367395744E238C91A /* Pods_Wipro_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F07F4DE4A92E78680FD834F /* Pods_Wipro_Assignment.framework */; };
+		36A283E224D6E64E003F6F55 /* WAConstantsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A283E124D6E64E003F6F55 /* WAConstantsTest.swift */; };
 		36D1C05224D2FDEB00FAD5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */; };
 		36D1C05424D2FDEB00FAD5D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */; };
 		36D1C05624D2FDEB00FAD5D2 /* WAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C05524D2FDEB00FAD5D2 /* WAViewController.swift */; };
 		36D1C05924D2FDEC00FAD5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D1C05724D2FDEC00FAD5D2 /* Main.storyboard */; };
 		36D1C05B24D2FDF300FAD5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D1C05A24D2FDF300FAD5D2 /* Assets.xcassets */; };
 		36D1C05E24D2FDF300FAD5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D1C05C24D2FDF300FAD5D2 /* LaunchScreen.storyboard */; };
-		36D1C06924D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C06824D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift */; };
 		36D1C07524D2FEA100FAD5D2 /* WANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07424D2FEA100FAD5D2 /* WANetworkManager.swift */; };
 		36D1C07C24D300B100FAD5D2 /* WAHTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07B24D300B100FAD5D2 /* WAHTTPRequestMethod.swift */; };
 		36D1C07E24D3265A00FAD5D2 /* WAFactsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C07D24D3265A00FAD5D2 /* WAFactsResponseModel.swift */; };
@@ -48,10 +48,11 @@
 		3640B53B24D3D26D000647CC /* WANetworkRechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WANetworkRechability.swift; sourceTree = "<group>"; };
 		3640B53E24D3D4F6000647CC /* WAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAError.swift; sourceTree = "<group>"; };
 		3640B54024D3E540000647CC /* WAURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAURLBuilder.swift; sourceTree = "<group>"; };
-		3640B54324D3E68F000647CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3640B54324D3E68F000647CC /* WAConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAConstants.swift; sourceTree = "<group>"; };
 		3640B54624D3E80F000647CC /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		3640B54824D3EF19000647CC /* WAFactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAFactsViewModelTests.swift; sourceTree = "<group>"; };
 		3640B54A24D3F229000647CC /* WANetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WANetworkManagerTests.swift; sourceTree = "<group>"; };
+		36A283E124D6E64E003F6F55 /* WAConstantsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAConstantsTest.swift; sourceTree = "<group>"; };
 		36D1C04E24D2FDEB00FAD5D2 /* Wipro Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wipro Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D1C05124D2FDEB00FAD5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36D1C05324D2FDEB00FAD5D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		36D1C05D24D2FDF300FAD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36D1C05F24D2FDF300FAD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36D1C06424D2FDF300FAD5D2 /* Wipro AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wipro AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		36D1C06824D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wipro_AssignmentTests.swift; sourceTree = "<group>"; };
 		36D1C06A24D2FDF300FAD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36D1C07424D2FEA100FAD5D2 /* WANetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WANetworkManager.swift; sourceTree = "<group>"; };
 		36D1C07B24D300B100FAD5D2 /* WAHTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAHTTPRequestMethod.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		3640B54224D3E685000647CC /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				3640B54324D3E68F000647CC /* Constants.swift */,
+				3640B54324D3E68F000647CC /* WAConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -118,6 +118,14 @@
 				3640B54624D3E80F000647CC /* UITableViewCell+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36A283E024D6E62C003F6F55 /* WAConstantsTest */ = {
+			isa = PBXGroup;
+			children = (
+				36A283E124D6E64E003F6F55 /* WAConstantsTest.swift */,
+			);
+			path = WAConstantsTest;
 			sourceTree = "<group>";
 		};
 		36D1C04524D2FDEB00FAD5D2 = {
@@ -161,7 +169,7 @@
 		36D1C06724D2FDF300FAD5D2 /* Wipro AssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				36D1C06824D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift */,
+				36A283E024D6E62C003F6F55 /* WAConstantsTest */,
 				36D1C06A24D2FDF300FAD5D2 /* Info.plist */,
 				3640B54824D3EF19000647CC /* WAFactsViewModelTests.swift */,
 				3640B54A24D3F229000647CC /* WANetworkManagerTests.swift */,
@@ -439,7 +447,7 @@
 				36D1C08024D3268800FAD5D2 /* WAFactsViewModel.swift in Sources */,
 				36D1C07C24D300B100FAD5D2 /* WAHTTPRequestMethod.swift in Sources */,
 				36D1C05424D2FDEB00FAD5D2 /* SceneDelegate.swift in Sources */,
-				3640B54424D3E68F000647CC /* Constants.swift in Sources */,
+				3640B54424D3E68F000647CC /* WAConstants.swift in Sources */,
 				36D1C08224D32CE800FAD5D2 /* WABaseViewController.swift in Sources */,
 				36D1C08824D339DD00FAD5D2 /* WAFactTableViewCell.swift in Sources */,
 				36D1C07E24D3265A00FAD5D2 /* WAFactsResponseModel.swift in Sources */,
@@ -453,7 +461,7 @@
 			files = (
 				3640B54924D3EF19000647CC /* WAFactsViewModelTests.swift in Sources */,
 				3640B54B24D3F229000647CC /* WANetworkManagerTests.swift in Sources */,
-				36D1C06924D2FDF300FAD5D2 /* Wipro_AssignmentTests.swift in Sources */,
+				36A283E224D6E64E003F6F55 /* WAConstantsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

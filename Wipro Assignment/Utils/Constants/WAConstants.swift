@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum NetworkConstant {
+enum WANetworkConstant {
     static let baseURL = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
 }
 
-enum AlertConstant {
+enum WAAlertConstant {
     static let success = "Success"
     static let info = "Alert"
     static let error = "Error"

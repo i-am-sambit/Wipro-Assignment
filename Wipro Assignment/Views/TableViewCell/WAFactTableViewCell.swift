@@ -76,9 +76,9 @@ class WAFactTableViewCell: UITableViewCell {
         
         if let imageURL = URL(string: fact.image) {
             factImageView.sd_imageIndicator = SDWebImageActivityIndicator.grayLarge
-            factImageView.sd_setImage(with: imageURL)
+            factImageView.sd_setImage(with: imageURL, placeholderImage: #imageLiteral(resourceName: "placeholder"))
         } else {
-            factImageView.image = nil
+            factImageView.image = #imageLiteral(resourceName: "placeholder")
         }
     }
     

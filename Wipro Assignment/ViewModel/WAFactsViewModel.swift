@@ -33,7 +33,7 @@ class WAFactsViewModel {
     
     func fetch() {
         do {
-            let url = try WAURLBuilder(NetworkConstant.baseURL).build()
+            let url = try WAURLBuilder(WANetworkConstant.baseURL).build()
             WANetworkManager<WAFactsResponseModel>(url: url, httpMethod: .get).makeServiceRequest { (result) in
                 DispatchQueue.main.async {
                     switch result {

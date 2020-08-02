@@ -55,13 +55,13 @@ class WABaseViewController: UITableViewController {
         switch alert {
             
         case .success(message: let message):
-            alertTitle = AlertConstant.success
+            alertTitle = WAAlertConstant.success
             alertMessage = message
         case .info(message: let message):
-            alertTitle = AlertConstant.info
+            alertTitle = WAAlertConstant.info
             alertMessage = message
         case .error(message: let message):
-            alertTitle = AlertConstant.error
+            alertTitle = WAAlertConstant.error
             alertMessage = message
         }
         
